@@ -4,6 +4,9 @@ inputs:
   survey_id:
     description: 'ID of the survey for which to create a weblink.'
     required: true
+  surveymonkey_token:
+    description: 'Valid access token for Surveymonkey.'
+    required: true
   name:
     description: 'Name of the weblink. This should be the name of a customer.'
     required: true
@@ -22,6 +25,7 @@ runs:
     shell: bash
     env:
       INPUTS_SURVEY_ID: ${{ inputs.survey_id }}
+      INPUTS_SURVEYMONKEY_TOKEN: ${{ inputs.surveymonkey_token }}
       INPUTS_NAME: ${{ inputs.name }}
       INPUTS_DAYS_OPEN: ${{ inputs.days_open }}
     run: |

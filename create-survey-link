@@ -35,7 +35,7 @@ def paramencode(params: dict):
 
 def make_auth():
   return {
-    'Authorization': 'Bearer %s' % os.getenv('ACCESS_TOKEN'),
+    'Authorization': 'Bearer %s' % os.getenv('INPUTS_SURVEYMONKEY_TOKEN'),
   }
 
 
