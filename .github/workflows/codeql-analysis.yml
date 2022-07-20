@@ -24,4 +24,4 @@ jobs:
         name: acmecorp
 
     - run: |
-       echo ${{ createlink.outputs.link }}
+       echo "${{ steps.createlink.outputs.link }}"
