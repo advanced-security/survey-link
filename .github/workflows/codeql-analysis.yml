@@ -17,7 +17,7 @@ jobs:
     steps:
     - name: Create Link
       id: createlink
-      uses: zbazztian/surveymonkey-app@main
+      uses: zbazztian/survey-link@main
       with:
         surveymonkey_token: ${{ secrets.surveymonkey_token }}
         name: acmecorp deluxe 423 3453 ASfa;l __;ajsdflajjlj; ASfa;l __;ajsdflajjlj;.@bla
