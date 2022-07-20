@@ -3,6 +3,7 @@ description: 'After a GHAS trial you can share a link to a trial survey with cus
 inputs:
   survey_id:
     description: 'ID of the survey for which to create a weblink.'
+    default: 401892763
     required: true
   surveymonkey_token:
     description: 'Valid access token for Surveymonkey.'

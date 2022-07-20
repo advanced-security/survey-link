@@ -19,7 +19,6 @@ jobs:
       id: createlink
       uses: zbazztian/surveymonkey-app@main
       with:
-        survey_id: ${{ secrets.survey_id }}
         surveymonkey_token: ${{ secrets.surveymonkey_token }}
         name: acmecorp
 
