@@ -17,10 +17,10 @@ jobs:
     steps:
     - name: Create Link
       id: createlink
-      uses: zbazztian/survey-link@main
+      uses: advanced-security/survey-link@main
       with:
         surveymonkey_token: ${{ secrets.surveymonkey_token }}
-        name: acmecorp deluxe 423 3453 ASfa;l __;ajsdflajjlj; ASfa;l __;ajsdflajjlj;.@bla
+        name: acmecorp 123
 
     - run: |
        echo "${{ steps.createlink.outputs.link }}"
