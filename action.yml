@@ -31,5 +31,5 @@ runs:
       INPUTS_NAME: ${{ inputs.name }}
       INPUTS_DAYS_OPEN: ${{ inputs.days_open }}
     run: |
-      output="$(./create-survey-link "$INPUTS_SURVEY_ID" "$INPUTS_NAME" "$INPUTS_DAYS_OPEN")"
+      output="$(./create-survey-link "$INPUTS_SURVEY_ID" "$INPUTS_NAME" "$INPUTS_DAYS_OPEN" uffke)"
       echo "::set-output name=link::$output"
