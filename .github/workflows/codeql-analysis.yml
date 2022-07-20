@@ -1,18 +1,12 @@
-name: "Test Action"
+name: "Example"
 
 on:
-  push:
-    branches: [ main ]
   workflow_dispatch:
 
 jobs:
   analyze:
-    name: Test
+    name: Example
     runs-on: ubuntu-latest
-    permissions:
-      actions: read
-      contents: read
-      security-events: write
 
     steps:
     - name: Create Link
@@ -20,7 +14,7 @@ jobs:
       uses: advanced-security/survey-link@main
       with:
         surveymonkey_token: ${{ secrets.surveymonkey_token }}
-        name: acmecorp 123
+        name: acme limited
 
     - run: |
        echo "${{ steps.createlink.outputs.link }}"
